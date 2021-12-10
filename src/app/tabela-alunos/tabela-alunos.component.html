@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!-- ---------------------------- tabela-alunos.component.html ---------------------------- -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!--Declarando a tabela com a Class "table", cuja a mesma é do estilo do Bootstrap-->
+  <table class="table">
+    <thead class="thead-dark">  <!--Class "thead-dark" também é do Bootstrap-->
+      <tr>
+        <!--*ngFor para gerar as "th" contendo os dados-->
+        <!-- "let itens" para criar uma variável local onde vai conter as informações de "dados"
+              que está declarada no "tabela-alunos.component.ts" -->
+        <th th *ngFor="let itens of dados" scope="col">{{itens}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+         <!--*ngFor para gerar as "td" contendo as informações-->
+        <!-- "let info" para criar uma variável local onde vai conter as informações de "info_aluno1"
+              que está declarada no "tabela-alunos.component.ts" -->
+        <td *ngFor="let info of info_aluno1"> {{info}}</td>
+      </tr>
+      <tr>
+        <!-- "let info" para criar uma variável local onde vai conter as informações de "info_aluno2"
+              que está declarada no "tabela-alunos.component.ts" -->
+        <td *ngFor="let info of info_aluno2"> {{info}}</td>
+      </tr>
+      <tr>
+        <!-- "let info" para criar uma variável local onde vai conter as informações de "info_aluno3"
+              que está declarada no "tabela-alunos.component.ts" -->
+        <td *ngFor="let info of info_aluno3"> {{info}}</td>
+      </tr>
+      <tr>
+        <!-- "let info" para criar uma variável local onde vai conter as informações de "info_aluno4"
+              que está declarada no "tabela-alunos.component.ts" -->
+        <td *ngFor="let info of info_aluno4"> {{info}}</td>
+      </tr>
+      <tr>
+        <!-- "let info" para criar uma variável local onde vai conter as informações de "info_aluno5"
+              que está declarada no "tabela-alunos.component.ts" -->
+        <td *ngFor="let info of info_aluno5"> {{info}}</td>
+      </tr>
+      <tr>
+        <!-- "let info" para criar uma variável local onde vai conter as informações de "info_aluno6"
+              que está declarada no "tabela-alunos.component.ts" -->
+        <td *ngFor="let info of info_aluno6"> {{info}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
